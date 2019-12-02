@@ -23,7 +23,7 @@ public class TokenController extends BaseController {
     }
 
     public boolean save(String email, String token) {
-       final String methodName = "save";
+        final String methodName = "save";
         start(methodName);
         final String sql = "INSERT INTO token (email,token) VALUES (:email,:token);";
 
@@ -38,7 +38,8 @@ public class TokenController extends BaseController {
         completed(methodName);
         return result;
     }
-public boolean checkToken(String token) {
+
+    public boolean checkToken(String token) {
         final String methodName = "checkToken";
         start(methodName);
         final String sql
